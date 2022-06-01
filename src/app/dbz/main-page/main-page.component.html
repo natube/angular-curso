@@ -1,0 +1,60 @@
+<p>main-page works!</p>
+
+<h1>Dragon Ball Z</h1>
+<hr>
+<div class="row">
+    <!-- <div class="col">
+        <h3>Personajes</h3>
+        <hr>
+        <ul>
+            <li>Krillin - 700</li>
+            <li>Goku - 15.000</li>
+            <li>Vegeta - 8.500</li>
+        </ul>
+    </div> -->
+    <div class="col">
+        <app-personajes>
+
+        </app-personajes>
+        <!-- <h3>Personajes</h3>
+        <hr>
+        <ul>
+            <li *ngFor="let personaje of personajes">
+                {{ personaje.nombre }}
+                {{'-'}}
+                {{ personaje.power | number}}
+            </li>
+           
+        </ul> -->
+    </div>
+    <div class="col">
+        <app-agregar 
+            [nuevo]="nuevo"
+            
+        ></app-agregar>
+       <!--  arriba se puede poner tambien [nuevo]="nuevo"; -->
+        <!-- <h3>Agregar Personaje <small>{{nuevo.nombre}}</small></h3>
+        <hr>
+        <form (ngSubmit)="agregar()">
+            <input 
+                type="text" 
+                placeholder="Nombre del Personaje"
+                name="nombre"
+                [(ngModel)]="nuevo.nombre"
+
+            >
+            <input 
+                type="number" 
+                placeholder="Poder"
+                name="power"
+                [(ngModel)]="nuevo.power"
+            > -->
+            <!-- [value]="nuevo.nombre"
+            (input)="cambiarNombre($event)" -->
+            <!-- llaves cuadradas para mostrar un objetoy llaves para emitir o traer el evento -->
+            <!-- <button>
+                Agregar
+            </button>
+        </form> -->
+    </div>
+</div>
